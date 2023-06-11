@@ -197,11 +197,26 @@ header {
 }
 
 /* Hamburger / Toggel Menu CSS style */
-
 .Barrs-icon {
   display: none;
 }
 
 .mobile-menu {
   display: none;
+}
+
+@media (max-width: 770px) {
+  .menu {
+    display: none;
+  }
+
+  .Barrs-icon {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 30px;
+    right: 50px;
+    z-index: 2;
+  }
+
 }
