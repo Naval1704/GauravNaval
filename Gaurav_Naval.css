@@ -178,22 +178,6 @@ header {
   transform: translateY(-5px);
 }
 
-/* Media Query for Responsive Layout */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu {
-    margin-top: 20px;
-  }
-
-  .menu li {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-}
 
 /* Hamburger / Toggel Menu CSS style */
 .Barrs-icon {
