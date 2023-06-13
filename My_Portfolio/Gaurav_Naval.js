@@ -19,3 +19,20 @@ document.addEventListener('mousemove', function(event) {
 });
 
 // Toggle mobile menu
+
+
+// 
+document.addEventListener("DOMContentLoaded", function() {
+    var menuItems = document.querySelectorAll(".fade");
+    var resumeButton = document.querySelector(".resume-button");
+
+    function addFadeEffect() {
+      for (var i = 0; i < menuItems.length; i++) {
+        menuItems[i].classList.add("active");
+      }
+
+      resumeButton.classList.add("active");
+    }
+
+    window.setTimeout(addFadeEffect, 100);
+  });
