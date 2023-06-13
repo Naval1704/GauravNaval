@@ -24,7 +24,7 @@
 
     <header>
       <div class="logo">
-        <a href="/" aria-label="home">
+        <a href="#" aria-label="home">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
             <polygon stroke="#00d5ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" points="50 5 10 30 10 70 50 95 90 70 90 30" fill="none"></polygon>
             <text x="50%" y="50%" text-anchor="middle" fill="#00d5ff" font-size="50" font-weight="bold" dominant-baseline="central" font-family="sans-serif">G</text>
@@ -45,20 +45,24 @@
         </div>
       </div>
 
-      <div class="Barrs-icon">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="Barrs-icon">
         <i class="fa-solid fa-bars" style="color: #00d5ff; font-size: 25px;"></i>
-      </div>
+      </label>
 
     </header>
 
-    <nav class="mobile-menu">
+    <nav class="mobile-menu" id="mobile-menu">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="resume-button" target="_blank">Resume</a></li>
       </ul>
+
+      <div class="mobile-menu-resume">
+        <a class="resumeButton" href="resume-button" target="_blank">Resume</a>
+      </div>
     </nav>
 
     
