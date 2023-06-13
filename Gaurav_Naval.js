@@ -19,13 +19,15 @@ document.addEventListener('mousemove', function(event) {
 });
 
 // Toggle mobile menu
-const barrsIcon = document.querySelector('.Barrs-icon');
-const mobileMenu = document.querySelector('.mobile-menu');
+document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('menu-toggle');
+    var mobileMenu = document.getElementById('mobile-menu');
 
-// Function to toggle the mobile menu
-function toggleMobileMenu() {
-  mobileMenu.classList.toggle('open');
-}
-
-// Add event listener to the barrs icon
-barrsIcon.addEventListener('click', toggleMobileMenu);
+    menuToggle.addEventListener('change', function() {
+      if (menuToggle.checked) {
+        mobileMenu.style.right = '0';
+      } else {
+        mobileMenu.style.right = '-100%';
+      }
+    });
+  });
