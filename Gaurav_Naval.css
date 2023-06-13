@@ -119,11 +119,12 @@ header {
   position: relative;
   width: 60px;
   height: 60px;
-  transition: transform 0.3s;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
 }
 
 .logo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1) rotateY(360deg);
 }
 
 .menu {
@@ -151,6 +152,7 @@ header {
   text-decoration: none;
   color: #ffffff;
   font-size: 15px;
+  font-weight: bold;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   transition: color 0.3s;
 }
@@ -167,6 +169,7 @@ header {
   color: #fff;
   font-size: 16px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
   text-decoration: none;
   transition: transform 0.3s;
 }
@@ -201,17 +204,88 @@ header {
   display: none;
 }
 
+#menu-toggle {
+  display: none;
+}
+
 @media (max-width: 770px) {
+
   .menu {
     display: none;
   }
 
   .Barrs-icon {
+    
     display: block;
     position: absolute;
     cursor: pointer;
     top: 30px;
     right: 50px;
     z-index: 2;
+    transition: transform 0.5s;
+  }
+  .Barrs-icon:hover {
+    transform: scale(1.2);
+  }
+
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    top: 100px;
+    right: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .mobile-menu ul {
+    padding-left: 0 ;
+  }
+  .mobile-menu ul li{
+    list-style: none;
+    margin: 20px;
+    padding: 30px;
+  }
+
+  .mobile-menu ul a{
+    text-decoration: none;
+    border: #fbfcff;
+    color: #fff;
+    font-weight: bold ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+
+  .mobile-menu ul li a .Button {
+    border: 2px solid #ede9e9;
+    border-radius: 5px;
+  }
+  
+  .mobile-menu ul a:hover {
+    color: #00d5ff;
+  }
+  #menu-toggle {
+    display: none;
+  }
+
+  .mobile-menu .mobile-menu-resume {
+    margin: 20px;
+    padding: 30px;
+  }
+
+  .mobile-menu .mobile-menu-resume a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    border: #00d5ff solid 2px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: transform 1.0s ;
+  }
+  .mobile-menu .mobile-menu-resume:hover {
+    transform: translateY(-3px);
   }
 }
