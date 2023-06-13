@@ -1,5 +1,7 @@
 body {
   background-color: #000b21 ;
+  margin: 0;
+  padding: 0;
   z-index: 1;
 }
 
@@ -15,17 +17,6 @@ body {
   top: -9999px;
   left: -9999px;
   z-index: -1;
-}
-
-.cursor-shadow::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
 }
 
 /* Starting Page Animation CSS Style */
@@ -117,9 +108,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+  padding: 5px 50px;
   top: 0px;
   backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin: 0;
 }
 
 .logo {
@@ -130,12 +123,13 @@ header {
 }
 
 .logo:hover {
-  transform: translateY(-5px);
+  transform: scale(1.2);
 }
 
 .menu {
   display: flex;
   align-items: center;
+  padding: 10px;
 }
 
 .menu ul {
@@ -147,8 +141,10 @@ header {
   margin-left: 20px ;
   margin-right: 20px;
 }
+
 .menu ul li{
   margin: 20px;
+  display: inline-block;
 }
 
 .menu li a {
