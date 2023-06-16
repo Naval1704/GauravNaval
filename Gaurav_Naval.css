@@ -52,7 +52,7 @@ body {
 .hexagon-path {
   fill: transparent;
   stroke: #00d5ff;
-  stroke-width: 7px;
+  stroke-width: 4px;
   stroke-dasharray: 700;
   stroke-dashoffset: 700;
   animation: hexagon-animation 1s linear forwards;
@@ -64,7 +64,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: sans-serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 50px;
   color: #00d5ff;
   font-weight: bold;
@@ -179,6 +179,15 @@ header {
   color: #00d5ff;
 }
 
+/* Main Section starts */
+main {
+  margin: 0px auto;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 0px 150px;
+}
+
+
 section {
   margin: 0px auto;
   padding: 100px 0px;
@@ -187,7 +196,7 @@ section {
 
 /* Intro Section */
 #Intro {
-  margin: 0px 100px;
+  margin: 0px auto;
   padding: 0px 150px;
   display: flex;
   -webkit-box-pack: center;
@@ -346,8 +355,44 @@ section {
     color: #00d5ff;
   }
 
+  /* Main Section starts here */
+  main {
+    margin: 0px auto;
+    min-height: 100vh;
+    padding: 0px 45px;
+  }
+
   #Intro {
-    margin: 0px 20px;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+
+  #Intro h4{
+    font-size: 18px;
+  }
+
+  #Intro h1{
+    font-size: 43px;
+  }
+  #Intro h3{
+    font-size: 27px;
+  }
+  #Intro h2{
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 1000px) and (min-width: 770px) {
+    /* Main Section starts here */
+  main {
+    margin: 0px auto;
+    min-height: 100vh;
+    padding: 0px 100px;
+  }
+
+  #Intro {
+    margin: 0px auto;
     padding: 0px 10px;
   }
 
@@ -356,13 +401,39 @@ section {
   }
 
   #Intro h1{
-    font-size: 45px;
+    font-size: 55px;
   }
   #Intro h3{
-    font-size: 25px;
+    font-size: 32px;
   }
   #Intro h2{
     font-size: 20px;
   }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+    /* Main Section starts here */
+  main {
+    margin: 0px auto;
+    min-height: 100vh;
+    padding: 0px 120px;
+  }
 
+  #Intro {
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+
+  #Intro h4{
+    font-size: 21px;
+  }
+
+  #Intro h1{
+    font-size: 60px;
+  }
+  #Intro h3{
+    font-size: 38px;
+  }
+  #Intro h2{
+    font-size: 21px;
+  }
 }
