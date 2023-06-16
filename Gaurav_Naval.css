@@ -64,7 +64,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 50px;
   color: #00d5ff;
   font-weight: bold;
@@ -153,7 +153,7 @@ header {
   color: #ffffff;
   font-size: 15px;
   font-weight: bold;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   transition: color 0.3s;
 }
 
@@ -168,7 +168,7 @@ header {
   border-radius: 10px;
   color: #fff;
   font-size: 16px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   text-decoration: none;
   transition: transform 0.3s;
@@ -213,7 +213,7 @@ section {
   margin: 5px;
   padding: 5px;
   color: #d5e5e8;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: 70px;
 }
@@ -222,7 +222,7 @@ section {
   margin: 5px;
   padding: 5px;
   color: #00d5ff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
@@ -230,7 +230,7 @@ section {
   margin: 5px;
   padding: 5px;
   color: #a1efff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: 20px;
   max-width: 750px;
@@ -239,7 +239,7 @@ section {
   margin: 5px;
   padding: 5px;
   color: #d5e5e8;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: 40px;
 }
@@ -315,7 +315,7 @@ section {
     border: #fbfcff;
     color: #fff;
     font-weight: bold ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
   }
 
@@ -340,7 +340,7 @@ section {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     border: #00d5ff solid 2px;
     padding: 10px 20px;
@@ -359,12 +359,12 @@ section {
   main {
     margin: 0px auto;
     min-height: 100vh;
-    padding: 0px 45px;
+    padding: 0px 20px;
   }
 
   #Intro {
     margin: 0px auto;
-    padding: 0px 10px;
+    padding: 0px 5px;
   }
 
   #Intro h4{
@@ -372,10 +372,10 @@ section {
   }
 
   #Intro h1{
-    font-size: 43px;
+    font-size: 37px;
   }
   #Intro h3{
-    font-size: 27px;
+    font-size: 25px;
   }
   #Intro h2{
     font-size: 18px;
