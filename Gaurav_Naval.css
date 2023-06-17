@@ -18,6 +18,10 @@
   src: url(trebucbi.ttf) format('truetype');
 }
 
+html {
+  scroll-behavior:smooth;
+}
+
 body {
   background-color: #000b21 ;
   margin: 0;
@@ -129,13 +133,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+  padding: 5px 50px;
   top: 0px;
   backdrop-filter: blur(10px);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   margin: 0;
+  transition: top 1s ease;
 }
 
+.header-animation {
+  position: fixed;
+  top: -7px;
+  left: 0;
+  right: 0;
+  transition: top 0.8s ease;
+}
 .logo {
   position: relative;
   width: 60px;
@@ -210,13 +222,16 @@ main {
   max-width: 1600px;
   min-height: 100vh;
   padding: 0px 150px;
+
+  scroll-padding-top: 50px;
 }
 
 
 section {
   margin: 0px auto;
   padding: 100px 0px;
-  max-width: 1000px;
+  max-width: 1200px;
+
 }
 
 /* Intro Section */
@@ -241,6 +256,7 @@ section {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: 70px;
+  border-bottom: #00d5ff solid 1px;
 }
 
 #Intro h4 {
@@ -263,13 +279,62 @@ section {
 #Intro h3 {
   margin: 5px;
   padding: 5px;
-  color: #d5e5e8;
+  color: #c8e3e8;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: 40px;
 }
 
+/* Experience Section */
+#Experience {
+  margin: 0px auto;
+  padding: 0px 200px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0px;
+}
 
+#Experience h1 {
+  margin: 5px;
+  padding: 5px;
+  color: #d5e5e8;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  border-bottom: #00d5ff solid 1px;
+}
+
+
+/* Work Section */
+#Work {
+  margin: 0px auto;
+  padding: 0px 200px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0px;
+}
+
+#Work h1 {
+  margin: 5px;
+  padding: 5px;
+  color: #d5e5e8;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  border-bottom: #00d5ff solid 1px;
+}
 
 /* Hamburger / Toggel Menu CSS style */
 .Barrs-icon {
