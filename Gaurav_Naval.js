@@ -31,3 +31,23 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+// Front page Intro section
+
+// Variables to store the previous scroll position and scroll direction
+let prevScrollPos = window.pageYOffset;
+
+function handleScroll() {
+  const currentScrollPos = window.pageYOffset;
+  const header = document.querySelector('header');
+
+  if (currentScrollPos > prevScrollPos) {
+    header.classList.remove('header-animation');
+  } else {
+    header.classList.add('header-animation');
+  }
+
+  prevScrollPos = currentScrollPos;
+}
+
+window.addEventListener('scroll', handleScroll);
