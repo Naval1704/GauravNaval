@@ -532,7 +532,7 @@ section {
   }
 
   #Experience h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
   #Experience .CheggInd .CheggIndHeadings h2{
     font-size: 25px;
@@ -550,6 +550,10 @@ section {
     height: 60px;
     width: 250px;
     padding: 10px 0px;
+  }
+
+  #Work h1 {
+    font-size: 30px;
   }
 
 }
