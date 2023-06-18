@@ -18,10 +18,6 @@
   src: url(trebucbi.ttf) format('truetype');
 }
 
-html {
-  scroll-behavior:smooth;
-}
-
 body {
   background-color: #000b21 ;
   margin: 0;
@@ -32,15 +28,15 @@ body {
 
 /* Cursor Animation */
 .cursor-shadow {
-  position: fixed;
+  position:fixed;
   width: 800px;
   height: 800px;
   border-radius: 50%;
   background: radial-gradient(circle at center, #091e45 0%, rgba(21, 15, 63, 0) 70%);
   pointer-events: none;
   transform: translate(-50%, -50%);
-  top: -9999px;
-  left: -9999px;
+  top: 100%;
+  left: 100%;
   z-index: -1;
 }
 
@@ -131,6 +127,9 @@ body {
 /*  Navigation bar CSS style */
 header {
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 5px 50px;
@@ -138,16 +137,9 @@ header {
   backdrop-filter: blur(10px);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   margin: 0;
-  transition: top 1s ease;
 }
 
-.header-animation {
-  position: fixed;
-  top: -7px;
-  left: 0;
-  right: 0;
-  transition: top 0.8s ease;
-}
+
 .logo {
   position: relative;
   width: 60px;
@@ -222,15 +214,13 @@ main {
   max-width: 1600px;
   min-height: 100vh;
   padding: 0px 150px;
-
-  scroll-padding-top: 50px;
 }
 
 
 section {
   margin: 0px auto;
   padding: 100px 0px;
-  max-width: 1200px;
+  max-width: 1000px;
 
 }
 
@@ -288,7 +278,7 @@ section {
 /* Experience Section */
 #Experience {
   margin: 0px auto;
-  padding: 0px 200px;
+  padding: 0px 150px;
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
@@ -298,6 +288,7 @@ section {
   min-height: 100vh;
   height: 100vh;
   padding: 0px;
+  
 }
 
 #Experience h1 {
@@ -306,10 +297,70 @@ section {
   color: #d5e5e8;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   border-bottom: #00d5ff solid 1px;
 }
 
+#Experience .CheggInd {
+  box-sizing: border-box;
+  padding: 40px 50px;
+  display: inline-block;
+
+}
+#Experience .CheggInd .CheggIndHeadings {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+  
+}
+#Experience .CheggInd .CheggIndHeadings h2{
+  color: #4edbf1;
+  font-weight: bold;
+  font-size: 35px;
+}
+#Experience .CheggInd .CheggIndHeadings h3{
+  color: #ffa4a4;
+}
+#Experience .CheggInd .CheggIndHeadings h4{
+  color: #ffffff;
+}
+.CheggIndContent {
+  display: flex;
+  align-items: center;
+}
+.CheggIndContent p{
+  color: #b8b7b7;
+  font-size: 20px;
+  max-width: 900px;
+}
+.CheggIndContent .ImgChegg img{
+  height: 90px;
+  width: 320px;
+  padding: 0px 30px;
+}
+
+.CheggInd .CheggCertificate {
+  margin: 20px 0px;;
+}
+.CheggInd .CheggCertificate a{
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: solid #00d5ff 2px;
+  border-radius: 12px;
+  transition: transform 0.3s ;
+}
+
+.CheggInd .CheggCertificate a:hover{
+  color: #00d5ff;
+}
+
+.CheggInd .CheggCertificate:hover {
+  transform: translateY(-5px);
+  color: #00d5ff;
+}
 
 /* Work Section */
 #Work {
@@ -332,7 +383,7 @@ section {
   color: #d5e5e8;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   border-bottom: #00d5ff solid 1px;
 }
 
@@ -469,6 +520,36 @@ section {
   }
   #Intro h2{
     font-size: 18px;
+  }
+
+  #Experience .CheggInd{
+    box-sizing: border-box;
+    padding: 0px 25px;
+  }
+
+  #Experience .CheggIndContent {
+    display: inline-block;
+  }
+
+  #Experience h1 {
+    font-size: 35px;
+  }
+  #Experience .CheggInd .CheggIndHeadings h2{
+    font-size: 25px;
+  }
+  #Experience .CheggInd .CheggIndHeadings h3{
+    font-size: 15px;
+  }
+  #Experience .CheggInd .CheggIndHeadings h4{
+    font-size: 15px;
+  }
+  .CheggIndContent p{
+    font-size: 17px;
+  }
+  .CheggIndContent .ImgChegg img{
+    height: 60px;
+    width: 250px;
+    padding: 10px 0px;
   }
 
 }
