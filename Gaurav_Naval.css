@@ -532,7 +532,7 @@ section {
   }
 
   #Experience h1 {
-    font-size: 28px;
+    font-size: 35px;
   }
   #Experience .CheggInd .CheggIndHeadings h2{
     font-size: 25px;
@@ -553,7 +553,7 @@ section {
   }
 
   #Work h1 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
 }
@@ -584,6 +584,40 @@ section {
   #Intro h2{
     font-size: 20px;
   }
+
+  #Experience .CheggInd{
+    box-sizing: border-box;
+    padding: 0px 25px;
+  }
+
+  #Experience .CheggIndContent {
+    display: flex;
+  }
+
+  #Experience h1 {
+    font-size: 30px;
+  }
+  #Experience .CheggInd .CheggIndHeadings h2{
+    font-size: 25px;
+  }
+  #Experience .CheggInd .CheggIndHeadings h3{
+    font-size: 15px;
+  }
+  #Experience .CheggInd .CheggIndHeadings h4{
+    font-size: 15px;
+  }
+  .CheggIndContent p{
+    font-size: 17px;
+    padding: 0px 10px;
+  }
+  .CheggIndContent .ImgChegg img{
+    height: 60px;
+    width: 250px;
+    padding: 30px 0px;
+  }
+  #Work h1 {
+    font-size: 30px;
+  }
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
     /* Main Section starts here */
@@ -610,5 +644,38 @@ section {
   }
   #Intro h2{
     font-size: 21px;
+  }
+  #Experience .CheggInd{
+    box-sizing: border-box;
+    padding: 0px 25px;
+  }
+
+  #Experience .CheggIndContent {
+    display: flex;
+  }
+
+  #Experience h1 {
+    font-size: 40px;
+  }
+  #Experience .CheggInd .CheggIndHeadings h2{
+    font-size: 30px;
+  }
+  #Experience .CheggInd .CheggIndHeadings h3{
+    font-size: 20px;
+  }
+  #Experience .CheggInd .CheggIndHeadings h4{
+    font-size: 17px;
+  }
+  .CheggIndContent p{
+    font-size: 17px;
+    padding: 0px 10px;
+  }
+  .CheggIndContent .ImgChegg img{
+    height: 70px;
+    width: 280px;
+    padding: 30px 0px;
+  }
+  #Work h1 {
+    font-size: 40px;
   }
 }
