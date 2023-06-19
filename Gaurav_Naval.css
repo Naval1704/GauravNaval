@@ -218,7 +218,7 @@ main {
 
 
 section {
-  margin: 0px auto;
+  margin: 0px 5px;
   padding: 100px 0px;
   max-width: 1000px;
 
@@ -365,7 +365,7 @@ section {
 /* Work Section */
 #Work {
   margin: 0px auto;
-  padding: 0px 200px;
+  padding: 0px 150px;
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
@@ -386,6 +386,95 @@ section {
   font-size: 40px;
   border-bottom: #00d5ff solid 1px;
 }
+
+#Work .Portfolio {
+  box-sizing: border-box;
+  padding: 60px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Work .Portfolio .PortfolioContent{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+}
+
+#Work .Portfolio .PortfolioContent .Name h2 {
+  color: #00d5ff;
+  font-size: 30px;
+}
+#Work .Portfolio .PortfolioContent .Skills ul {
+  color: #b8b7b7;
+  display: flex;
+  list-style: none;
+  list-style-position: inside;
+  font-size: 15px;
+  justify-content:space-between;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+#Work .Portfolio .PortfolioContent .Skills ul li{
+  padding: 0px 20px;
+}
+
+#Work .Portfolio .PortfolioImg {
+  position: relative;
+}
+
+#Work .Portfolio .PortfolioImg img {
+  max-height: 300px;
+  width: auto;
+  margin: 0px 15px;
+  box-shadow: 0px 0px 10px rgba(53, 53, 53, 0.5);
+  border: solid 1px #165764;
+  transition: filter 0.3s ease;
+}
+
+#Work .Portfolio .PortfolioImg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 170, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#Work .Portfolio:hover .PortfolioImg img {
+  filter: blur(4px);
+}
+
+#Work .Portfolio .LinkLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+#Work .Portfolio:hover .LinkLogo {
+  opacity: 1;
+}
+
+#Work .Portfolio .LinkLogo i {
+  font-size: 30px;
+  color: #00d5ff;
+  transition: transform 0.5s;
+}
+#Work .Portfolio .LinkLogo i:hover {
+  transform: scale(1.5);
+}
+
+
+
 
 /* Hamburger / Toggel Menu CSS style */
 .Barrs-icon {
@@ -522,6 +611,11 @@ section {
     font-size: 18px;
   }
 
+  #Experience {
+    margin: 0px auto;
+    padding: 0px 5px;
+  }
+
   #Experience .CheggInd{
     box-sizing: border-box;
     padding: 0px 25px;
@@ -552,10 +646,41 @@ section {
     padding: 10px 0px;
   }
 
+  #Work {
+    margin: 0px auto;
+    padding: 0px 5px;
+  }
   #Work h1 {
     font-size: 35px;
   }
 
+  #Work .Portfolio {
+    display: inline-block;
+    padding: 40px 25px;
+  }
+  #Work .Portfolio .PortfolioContent .Name h2 {
+    font-size: 25px;
+  }
+  #Work .Portfolio .PortfolioContent{
+    font-size: 20px;
+    align-items:flex-start;
+  }
+  #Work .Portfolio .PortfolioContent .Skills ul {
+    font-size: 14px;
+  }
+  #Work .Portfolio .PortfolioContent .Skills ul li{
+    padding: 0;
+    padding-right: 20px;
+  }
+  
+  #Work .Portfolio .PortfolioImg {
+    position: relative;
+  }
+  #Work .Portfolio .PortfolioImg img {
+    max-height: 160px;
+    width: auto;
+    margin: 0px 2px;
+  }
 }
 
 @media (max-width: 1000px) and (min-width: 770px) {
