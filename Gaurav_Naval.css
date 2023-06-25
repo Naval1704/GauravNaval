@@ -426,9 +426,9 @@ section {
 }
 
 #Work .Portfolio .PortfolioImg img {
-  max-height: 300px;
+  max-height: 200px;
   width: auto;
-  margin: 0px 15px;
+  margin: 0px 40px;
   box-shadow: 0px 0px 10px rgba(53, 53, 53, 0.5);
   border: solid 1px #165764;
   transition: filter 0.3s ease;
@@ -470,6 +470,92 @@ section {
   transition: transform 0.5s;
 }
 #Work .Portfolio .LinkLogo i:hover {
+  transform: scale(1.5);
+}
+
+#Work .DCProject {
+  box-sizing: border-box;
+  padding: 60px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Work .DCProject .DcContent{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+}
+
+#Work .DCProject .DcContent .Name h2 {
+  color: #00d5ff;
+  font-size: 30px;
+}
+#Work .DCProject .DcContent .Skills ul {
+  color: #b8b7b7;
+  display: flex;
+  list-style: none;
+  list-style-position: inside;
+  font-size: 15px;
+  justify-content:space-between;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+#Work .DCProject .DcContent .Skills ul li{
+  padding: 0px 20px;
+}
+
+#Work .DCProject .DcImg {
+  position: relative;
+}
+
+#Work .DCProject .DcImg img {
+  max-height: 200px;
+  width: auto;
+  margin: 0px 15px;
+  box-shadow: 0px 0px 10px rgba(53, 53, 53, 0.5);
+  border: solid 1px #165764;
+  transition: filter 0.3s ease;
+}
+
+#Work .DCProject .DcImg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 170, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#Work .DCProject:hover .DcImg img {
+  filter: blur(4px);
+}
+
+#Work .DCProject .LinkLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+#Work .DCProject:hover .LinkLogo {
+  opacity: 1;
+}
+
+#Work .DCProject .LinkLogo i {
+  font-size: 30px;
+  color: #00d5ff;
+  transition: transform 0.5s;
+}
+#Work .DCProject .LinkLogo i:hover {
   transform: scale(1.5);
 }
 
@@ -648,6 +734,7 @@ section {
 
   #Work {
     margin: 0px auto;
+    display: inline-block;
     padding: 0px 5px;
   }
   #Work h1 {
@@ -656,7 +743,7 @@ section {
 
   #Work .Portfolio {
     display: inline-block;
-    padding: 40px 25px;
+    padding: 40px 5px;
   }
   #Work .Portfolio .PortfolioContent .Name h2 {
     font-size: 25px;
@@ -677,6 +764,33 @@ section {
     position: relative;
   }
   #Work .Portfolio .PortfolioImg img {
+    max-height: 160px;
+    width: auto;
+    margin: 0px 2px;
+  }
+  #Work .DCProject {
+    display: inline-block;
+    padding: 40px 5px;
+  }
+  #Work .DCProject .DcContent .Name h2 {
+    font-size: 25px;
+  }
+  #Work .DCProject .DcContent{
+    font-size: 20px;
+    align-items:flex-start;
+  }
+  #Work .DCProject .DcContent .Skills ul {
+    font-size: 14px;
+  }
+  #Work .DCProject .DcContent .Skills ul li{
+    padding: 0;
+    padding-right: 20px;
+  }
+  
+  #Work .DCProject .DcImg {
+    position: relative;
+  }
+  #Work .DCProject .DcImg img {
     max-height: 160px;
     width: auto;
     margin: 0px 2px;
