@@ -137,6 +137,7 @@ header {
   backdrop-filter: blur(10px);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   margin: 0;
+  z-index: 2;
 }
 
 
@@ -423,7 +424,6 @@ section {
 
 #Work .Portfolio .PortfolioImg {
   position: relative;
-  z-index: -1;
 }
 
 #Work .Portfolio .PortfolioImg img {
@@ -457,7 +457,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
   z-index: 1;
 }
 
@@ -510,7 +510,6 @@ section {
 
 #Work .DCProject .DcImg {
   position: relative;
-  z-index: -1;
 }
 
 #Work .DCProject .DcImg img {
