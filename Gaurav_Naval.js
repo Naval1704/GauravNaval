@@ -75,18 +75,42 @@ window.addEventListener('scroll', function() {
 });
 
 
-src = "https://smtpjs.com/v3/smtp.js"
+// For sending emails 
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
 
-function sendEmail(){
-  Email.send({
-    Host : "smtp.gmail.com",
-    Username : "Gaurav Naval",
-    Password : "password",
-    To : 'gauravnaval003@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : document.getElementById("subject").value,
-    Body : document.getElementById("message").value
-}).then(
-  message => alert(message)
-);
+function validateAndSubmit(event) {
+  event.preventDefault();
+
+  const name = document.querySelector('input[name="name"]');
+  const email = document.querySelector('input[name="email"]');
+  const subject = document.querySelector('input[name="subject"]');
+  const message = document.querySelector('textarea[name="message"]');
+
+  console.log("Name:", name.value);
+  console.log("Email:", email.value);
+  console.log("Subject:", subject.value);
+  console.log("Message:", message.value);
+
+  if (name.value === '' || email.value === '' || subject.value === '' || message.value === '') {
+      alert('Please fill in all the required fields.');
+  } else if (!isValidEmail(email.value)) {
+      alert('Please enter a valid email address.');
+  } else {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/vR6CJ8ZPJO5xZ9qx/",
+        type: "post",
+        data: $("#contact-form").serializeArray(),
+        success: function () {
+            console.log("Success: Your message sent successfully :)");
+            alert("Your message sent successfully :)");
+        },
+        error: function () {
+            console.log("Error: There was an error :(");
+            alert("There was an error :(");
+        }
+      });
+  }
 }
