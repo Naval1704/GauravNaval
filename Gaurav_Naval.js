@@ -74,43 +74,42 @@ window.addEventListener('scroll', function() {
   }
 });
 
-
 // For sending emails 
 function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
 
-function validateAndSubmit(event) {
-  event.preventDefault();
+function isValidPhoneNumber(phone) {
+  const phoneRegex = /^[0-9]{10}$/;
+  return phoneRegex.test(phone);
+}
 
-  const name = document.querySelector('input[name="name"]');
-  const email = document.querySelector('input[name="email"]');
-  const subject = document.querySelector('input[name="subject"]');
-  const message = document.querySelector('textarea[name="message"]');
+function validateAndSubmit() {
+  const name = document.querySelector('input[name="Name"]');
+  const email = document.querySelector('input[name="E-Mail"]');
+  const contact = document.querySelector('input[name="Contact"]');
+  const city = document.querySelector('input[name="city"]');
+  const message = document.querySelector('textarea[name="Message"]');
 
-  console.log("Name:", name.value);
-  console.log("Email:", email.value);
-  console.log("Subject:", subject.value);
-  console.log("Message:", message.value);
-
-  if (name.value === '' || email.value === '' || subject.value === '' || message.value === '') {
+  if (name.value === '' || email.value === '' || contact.value === '' || city.value === '' || message.value === '') {
       alert('Please fill in all the required fields.');
   } else if (!isValidEmail(email.value)) {
       alert('Please enter a valid email address.');
+  } else if (!isValidPhoneNumber(contact.value)) {
+      alert('Please enter a valid contact number.');
   } else {
       $.ajax({
-        url: "https://api.apispreadsheets.com/data/vR6CJ8ZPJO5xZ9qx/",
-        type: "post",
-        data: $("#contact-form").serializeArray(),
-        success: function () {
-            console.log("Success: Your message sent successfully :)");
-            alert("Your message sent successfully :)");
-        },
-        error: function () {
-            console.log("Error: There was an error :(");
-            alert("There was an error :(");
-        }
+          url:"https://api.apispreadsheets.com/data/RDpqKaLPpO4q9vY0/",
+          type:"post",
+          data:$("#myForm").serializeArray(),
+          success: function(){
+              alert("Your message sent succesfully :)")
+              document.getElementById('myForm').reset();
+          },
+          error: function(){
+              alert("There was an error :(")
+          }
       });
   }
 }
