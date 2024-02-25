@@ -73,3 +73,20 @@ window.addEventListener('scroll', function() {
     header.classList.remove('scrolled');
   }
 });
+
+
+src = "https://smtpjs.com/v3/smtp.js"
+
+function sendEmail(){
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "Gaurav Naval",
+    Password : "password",
+    To : 'gauravnaval003@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : document.getElementById("subject").value,
+    Body : document.getElementById("message").value
+}).then(
+  message => alert(message)
+);
+}
