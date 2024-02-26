@@ -619,7 +619,7 @@ section {
   resize: vertical;
 }
 
-#myForm #submit-btn {
+#myForm input[type="button"] {
   display: inline-block;
   padding: 10px 20px;
   border: solid 2px #00d5ff;
@@ -633,10 +633,11 @@ section {
   transition: transform 0.3s;
 }
 
-#myForm #submit-btn:hover {
+#myForm input[type="button"]:hover {
   transform: translateY(-5px);
   color: #00d5ff;
 }
+
 
 .contact-info {
   width: 45%;
