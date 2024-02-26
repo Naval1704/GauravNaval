@@ -619,7 +619,7 @@ section {
   resize: vertical;
 }
 
-#myForm button {
+#myForm #submit-btn {
   display: inline-block;
   padding: 10px 20px;
   border: solid 2px #00d5ff;
@@ -633,7 +633,7 @@ section {
   transition: transform 0.3s;
 }
 
-#myForm button:hover {
+#myForm #submit-btn:hover {
   transform: translateY(-5px);
   color: #00d5ff;
 }
@@ -653,6 +653,52 @@ section {
 }
 
 
+/* Social Media  */
+#social-media {
+  position: fixed;
+  left: 55px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 35px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.stLine {
+  width: 2px;
+  height: 170px; 
+  background-color: #00d5ff;
+  margin: 0 auto;
+}
+
+.social-icon:hover {
+  color: #00d5ff;
+  transform: scale(1.2);
+}
+
+.instagram:hover {
+  color: #e4405f; /* Instagram color */
+}
+
+.linkedin:hover {
+  color: #0077b5; /* LinkedIn color */
+}
+
+.facebook:hover {
+  color: #1877f2; /* Facebook color */
+}
 
 
 
